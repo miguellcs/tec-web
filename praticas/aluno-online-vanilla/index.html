@@ -3,83 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <title>Aluno Online</title>
-
-  <style>
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      display: flex;
-      background: #eee;
-    }
-
-    /* SIDEBAR */
-    aside {
-      width: 220px;
-      background: #ddd;
-      padding: 15px;
-      height: 100vh;
-    }
-
-    .logo {
-      border: 1px solid #999;
-      padding: 10px;
-      margin-bottom: 20px;
-      font-weight: bold;
-    }
-
-    aside ul {
-      list-style: disc;
-      padding-left: 20px;
-    }
-
-    aside li {
-      margin: 10px 0;
-    }
-
-    aside a {
-      color: purple;
-      text-decoration: underline;
-    }
-
-    /* CONTEÚDO */
-    main {
-      flex: 1;
-      padding: 20px;
-    }
-
-    .topo {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      border: 1px solid #999;
-      padding: 10px;
-      margin-bottom: 20px;
-      background: #ddd;
-    }
-
-    .avatar {
-      width: 40px;
-      height: 40px;
-      background: black;
-      border-radius: 50%;
-    }
-
-    .box {
-      border: 1px solid #999;
-      padding: 15px;
-      margin-bottom: 15px;
-      background: #ddd;
-    }
-
-    h1, h2, h3 {
-      margin-top: 0;
-    }
-
-    ul {
-      margin: 5px 0 0 20px;
-    }
-
-  </style>
+  <link rel="stylesheet" href="./style.css">
 </head>
 
 <body>
@@ -97,46 +21,50 @@
     </ul>
   </aside>
 
-  <main>
+  <div class="container">
 
     <div class="topo">
       <h1>Olá, Aluno!</h1>
       <div class="avatar"></div>
     </div>
 
-    <div class="box">
-      <h2>Bem-vindo ao portal do aluno</h2>
+    <main>
 
       <div class="box">
-        <h3>Mural de Avisos</h3>
-        <ul>
-          <li>Inscrição para o projeto de extensão</li>
-          <li>Eleição para representante de turma</li>
-        </ul>
+        <h2>Bem-vindo ao portal do aluno</h2>
+
+        <div class="box">
+          <h3>Mural de Avisos</h3>
+          <ul>
+            <li>Inscrição para o projeto de extensão</li>
+            <li>Eleição para representante de turma</li>
+          </ul>
+        </div>
+
+        <div class="box">
+          <h3>Calendário Acadêmico</h3>
+          <ul>
+            <li>23/02 - Início do período letivo 2026-1</li>
+            <li>25/04 - Prazo final para aplicação da P1</li>
+            <li>23/06 - Prazo final para aplicação da P2</li>
+            <li>04/07 - Fim do período letivo 2026-1</li>
+          </ul>
+        </div>
+
+        <div class="box">
+          <h3>Minhas Disciplinas</h3>
+          <ul>
+            <li>Bancos de Dados I (HMDC253)</li>
+            <li>Estrutura de Dados (MDC127)</li>
+            <li>Tecnologias Web (HMDC251)</li>
+          </ul>
+        </div>
+
       </div>
 
-      <div class="box">
-        <h3>Calendário Acadêmico</h3>
-        <ul>
-          <li>23/02 - Início do período letivo 2026-1</li>
-          <li>25/04 - Prazo final para aplicação da P1</li>
-          <li>23/06 - Prazo final para aplicação da P2</li>
-          <li>04/07 - Fim do período letivo 2026-1</li>
-        </ul>
-      </div>
+    </main>
 
-      <div class="box">
-        <h3>Minhas Disciplinas</h3>
-        <ul>
-          <li>Bancos de Dados I (HMDC253)</li>
-          <li>Estrutura de Dados (MDC127)</li>
-          <li>Tecnologias Web (HMDC251)</li>
-        </ul>
-      </div>
-
-    </div>
-
-  </main>
+  </div>
 
 </body>
 </html>
