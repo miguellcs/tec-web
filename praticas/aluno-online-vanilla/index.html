@@ -7,6 +7,48 @@
     <title>Aluno Online</title>
   </head>
   <body>
+    <aside aria-label="Menu lateral">
+      <header>
+        <h1>Aluno Online</h1>
+      </header>
+
+      <nav aria-label="Navegação principal">
+        <ul>
+          <li><a href="#avisos">Mural de Avisos</a></li>
+          <li><a href="#calendario">Calendário Acadêmico</a></li>
+          <li><a href="#disciplinas">Minhas Disciplinas</a></li>
+        </ul>
+      </nav>
+    </aside>
+
+    <main>
+      <header>
+        <p>Olá, Miguel!</p>
+        <img src="/avatar.svg" alt="Avatar do estudante" width="40" height="40" />
+      </header>
+
+      <section aria-label="Conteúdo da dashboard">
+        <article id="avisos" aria-labelledby="titulo-avisos">
+          <h2 id="titulo-avisos">Mural de Avisos</h2>
+          <p>Nenhum aviso novo no momento.</p>
+        </article>
+
+        <article id="calendario" aria-labelledby="titulo-calendario">
+          <h2 id="titulo-calendario">Calendário Acadêmico</h2>
+          <p>Próxima avaliação: 28/04.</p>
+        </article>
+
+        <article id="disciplinas" aria-labelledby="titulo-disciplinas">
+          <h2 id="titulo-disciplinas">Minhas Disciplinas</h2>
+          <ul>
+            <li>Tecnologias Web</li>
+            <li>Banco de Dados</li>
+            <li>Engenharia de Software</li>
+          </ul>
+        </article>
+      </section>
+    </main>
+
     <script type="module" src="/src/main.js"></script>
   </body>
 </html>
